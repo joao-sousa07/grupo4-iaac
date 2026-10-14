@@ -1,17 +1,5 @@
-# Notebooks
+## 🚀 Como Executar os Notebooks (Phishing URLs)
 
-## 1 - Preparação dos dados
-
-Exploração inicial e preparação dos dados.
-
-## 2 - Análise exploratória
-
-Análise e visualização dos dados.
-
-## 3 - Engenharia de características
-
-Criação e seleção de características.
-
-## 4 - Modelação e avaliação
-
-Treino e avaliação dos modelos.
+1. `notebooks/1_exploratory_data_analysis/eda.ipynb` (Análise Exploratória)
+2. `notebooks/2_data_preparation/data.ipynb` (Tratamento e Divisão dos Dados)
+3. `notebooks/3_model_training/model_training.ipynb` (Treino e Avaliação dos Modelos)
