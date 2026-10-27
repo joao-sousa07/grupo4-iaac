@@ -1,0 +1,32 @@
+# Estado do projeto IAAC — 27/10/2026
+
+Dataset: [IoT Malware Network Traffic Dataset (CIC-YNU-2026)](https://www.kaggle.com/datasets/raneemababneh/iot-malware-network-traffic-dataset-cic-ynu-2026). A orientação do projeto é usar a fonte Kaggle, não versionar o dataset completo no repositório.
+
+## Trabalho realizado
+- **Business and Data Understanding:** EDA com distribuição de classes, histogramas, correlações e análise de outliers (conforme gráficos partilhados).
+- **Data Preparation:** existe notebook de preparação e tratamento de dados; requer revisão/reprodução integral antes da entrega.
+- **Supervised Learning:** experiências com Random Forest inicial, ajustado, baixo RAM e Extra Trees baixo RAM.
+- **Model Evaluation & Optimization:** pesquisa limitada de cinco configurações e avaliação do Random Forest otimizado na validação completa. Resultados em [avaliacao_random_forest.md](avaliacao_random_forest.md).
+
+## Estado
+O candidato atual é o Random Forest otimizado com F1 macro **0.3931** e accuracy **0.5940** na validação completa. Isto **não** equivale a avaliação final em teste independente. Classe `Other_rare` permanece com recall de **0.0000**.
+
+## Próximos passos
+- Garantir separação adequada de treino/validação/teste, especialmente por Hash ou outras identidades de fluxo.
+- Validar pipeline de pré-processamento e verificar se o treino foi feito sem informação do conjunto de validação.
+- Executar avaliação final somente depois de fixar o candidato.
+- Registar métricas finais e comparar classes minoritárias.
+- Atualizar documentação de execução do Colab e dependências.
+
+Esta documentação resume resultados observados, sem afirmar que o notebook ou o modelo foram reproduzidos nesta sessão.
+
+## Notebook versionado
+- [Data Preparation e avaliação — v3](../notebooks/1_data_preparation/data_preparation_otimizado_v3.ipynb): 40 células, sem outputs guardados; inclui a matriz de confusão do Random Forest otimizado.
+- Publicado na branch `joao-sousa` (commit `8e94602`). A execução e resultados finais devem ser validados no ambiente Colab.
+
+## Avaliação final — código preparado (v4)
+- [Notebook v4 com auditoria e avaliação final](../notebooks/1_data_preparation/data_preparation_otimizado_v4_avaliacao_final.ipynb).
+- Adicionadas verificações de hashes exclusivos, coerência das colunas de entrada e presença das classes do teste no treino.
+- A célula de teste calcula accuracy, precision/recall/F1, relatório por classe e matriz de confusão, exportando JSON/CSV/PNG.
+- **Pendente:** executar a versão v4 no Google Colab e registar os resultados reais de teste. Nenhum resultado de teste foi calculado aqui.
+- O modelo avaliado permanece aquele treinado em `X_tune` (amostra de treino), sem alterar hiperparâmetros após observar resultados.
