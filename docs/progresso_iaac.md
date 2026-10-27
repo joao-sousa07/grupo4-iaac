@@ -19,3 +19,7 @@ O candidato atual é o Random Forest otimizado com F1 macro **0.3931** e accurac
 - Atualizar documentação de execução do Colab e dependências.
 
 Esta documentação resume resultados observados, sem afirmar que o notebook ou o modelo foram reproduzidos nesta sessão.
+
+## Notebook versionado
+- [Data Preparation e avaliação — v3](../notebooks/1_data_preparation/data_preparation_otimizado_v3.ipynb): 40 células, sem outputs guardados; inclui a matriz de confusão do Random Forest otimizado.
+- Publicado na branch `joao-sousa` (commit `8e94602`). A execução e resultados finais devem ser validados no ambiente Colab.
