@@ -23,3 +23,10 @@ Esta documentação resume resultados observados, sem afirmar que o notebook ou 
 ## Notebook versionado
 - [Data Preparation e avaliação — v3](../notebooks/1_data_preparation/data_preparation_otimizado_v3.ipynb): 40 células, sem outputs guardados; inclui a matriz de confusão do Random Forest otimizado.
 - Publicado na branch `joao-sousa` (commit `8e94602`). A execução e resultados finais devem ser validados no ambiente Colab.
+
+## Avaliação final — código preparado (v4)
+- [Notebook v4 com auditoria e avaliação final](../notebooks/1_data_preparation/data_preparation_otimizado_v4_avaliacao_final.ipynb).
+- Adicionadas verificações de hashes exclusivos, coerência das colunas de entrada e presença das classes do teste no treino.
+- A célula de teste calcula accuracy, precision/recall/F1, relatório por classe e matriz de confusão, exportando JSON/CSV/PNG.
+- **Pendente:** executar a versão v4 no Google Colab e registar os resultados reais de teste. Nenhum resultado de teste foi calculado aqui.
+- O modelo avaliado permanece aquele treinado em `X_tune` (amostra de treino), sem alterar hiperparâmetros após observar resultados.
