@@ -8,3 +8,9 @@ env/
 *.sqlite3
 .env
 .DS_Store
+
+# Dados e modelos gerados localmente
+*.joblib
+*.csv
+*.parquet
+resultados_avaliacao_final/
