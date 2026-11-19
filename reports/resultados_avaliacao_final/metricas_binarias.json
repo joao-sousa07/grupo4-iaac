@@ -1,0 +1,11 @@
+{
+    "accuracy": 0.9153616703952274,
+    "precision_nao_benigno": 0.9985500735173991,
+    "recall_nao_benigno": 0.9085284280936455,
+    "f1_nao_benigno": 0.9514145620111297,
+    "verdadeiros_negativos": 5113,
+    "falsos_positivos": 71,
+    "falsos_negativos": 4923,
+    "verdadeiros_positivos": 48897,
+    "nota": "Todas as classes exceto Benign foram consideradas nao benignas."
+}

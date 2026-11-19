@@ -1,0 +1,19 @@
+{
+  "modelo": "Random Forest otimizado (treinado com X_tune)",
+  "amostras_teste": 59004,
+  "accuracy": 0.5025083045217273,
+  "precision_macro": 0.3836987593352194,
+  "recall_macro": 0.5294234634154066,
+  "f1_macro": 0.38631275981337215,
+  "f1_weighted": 0.5136974751802893,
+  "hiperparametros": {
+    "n_estimators": 80,
+    "max_depth": 18,
+    "min_samples_split": 5,
+    "min_samples_leaf": 2,
+    "max_features": 0.7,
+    "class_weight": "balanced_subsample"
+  },
+  "semente": 42,
+  "nota": "Teste independente; não utilizar estes resultados para afinar hiperparâmetros."
+}

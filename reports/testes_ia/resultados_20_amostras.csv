@@ -1,0 +1,21 @@
+﻿Classe real,Previsao,Correto
+Benign,Benign,True
+Benign,Benign,True
+Benign,Benign,True
+Benign,Benign,True
+DarkNexus,Benign,False
+DarkNexus,DarkNexus,True
+DarkNexus,Benign,False
+DarkNexus,Benign,False
+Generic,Mirai,False
+Generic,DarkNexus,False
+Generic,Mirai,False
+Generic,Unknown,False
+Mirai,Mirai,True
+Mirai,Unknown,False
+Mirai,Benign,False
+Mirai,Benign,False
+Tsunami,Mirai,False
+Tsunami,Mirai,False
+Tsunami,Mirai,False
+Tsunami,Mirai,False

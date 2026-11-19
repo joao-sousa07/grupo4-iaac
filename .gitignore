@@ -9,8 +9,19 @@ env/
 .env
 .DS_Store
 
-# Dados e modelos gerados localmente
-*.joblib
-*.csv
-*.parquet
-resultados_avaliacao_final/
+# Modelos de grande dimensão
+models/*.pkl
+models/*.joblib
+
+# Dados locais
+data/raw/*
+data/processed/*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Relatórios temporários
+reports/analises_ia/*.txt
